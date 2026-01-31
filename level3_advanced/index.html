@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz Internship - Level 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Level 3 – Advanced Front-End</h1>
+
+        <!-- API SECTION -->
+        <div class="section">
+            <h2>API Integration</h2>
+            <p>
+                Click the button below to fetch user data dynamically
+                from a public API using JavaScript.
+            </p>
+
+            <button onclick="loadUsers()">Load Users</button>
+            <p id="loading"></p>
+
+            <ul id="userList"></ul>
+        </div>
+
+        <!-- FORM SECTION -->
+        <div class="section">
+            <h2>Contact Form</h2>
+            <p>
+                This form demonstrates client-side validation and
+                dynamic feedback using JavaScript.
+            </p>
+
+            <form onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="formMessage"></p>
+            <div id="submittedData"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

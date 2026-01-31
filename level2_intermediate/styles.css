@@ -1,0 +1,93 @@
+body {
+    background-color: #f2f6ff;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1f3c88;
+}
+
+h2 {
+    color: #444;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #1f3c88;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 601px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+/* Hover interaction */
+button:hover {
+    background-color: #163172;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .card {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    letter-spacing: 1px;
+}
+
+p {
+    max-width: 500px;
+    margin: 10px auto;
+}
+
